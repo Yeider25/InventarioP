@@ -202,7 +202,7 @@ if (isset($_GET['cerrar_sesion'])) {
                 
 
 
-                    <label class="mt-2">Nombre Regional:</label>
+                    <label class="mt-2">Nombre Regional</label>
                     <input type="text" class="form-control" id="nom_regional" name="nom_regional"
                         value="DISTRITO CAPITAL" placeholder="Distrito Capital" readonly>
                     <label class="mt-2">Nombre Centro de Costos:</label>
