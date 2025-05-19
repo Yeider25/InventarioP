@@ -1,0 +1,86 @@
+la ruta para poder iniciar en un servidor local debe ser la siguiente 
+http://localhost/InventarioPHP205/src/main/resources/templates/index.php
+____________________________________________________________________________
+Por arreglar:
+se debe mejorar  el tema del envio del formulario de solicitud periodica, la descarga del archivo excel 
+de igual manera se debe colocar la solucion de la descarga del excel de solicitud anual
+
+por otro lado se debe ajustar el envio del formulario aceptado por parte del almacen, que cargue los datos que solucion
+cantidad solicitada y la observacion subida y el boton del envio 
+
+ajustar el envio doble de la solicitud periodica 
+
+
+<!-- <!-- <?php
+include('../../PHP/Conexion.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id_maquina = $_POST['edit_seri_maqu'];
+    $nombre_maquina = $_POST['edit_nomb_maqu'];
+    $marca = $_POST['edit_marc_maqu'];
+    $modelo = $_POST['edit_model_maqu'];
+    $placa = $_POST['edit_plac_maqu'];
+    $adquisicion = $_POST['edit_adqu_maqu'];
+    $cantidad = $_POST['edit_cant_maqu'];
+    $id_ambiente = $_POST['edit_id_maqu'];
+
+    // Construir la consulta SQL
+    $updateQuery = "UPDATE maquina SET nombre_maquina='$nombre_maquina', marca='$marca', modelo='$modelo', placa='$placa', adquisicion='$adquisicion', cantidad='$cantidad', id_ambiente='$id_ambiente' WHERE serial='$id_maquina'";
+
+    // Ejecutar la consulta de actualización
+    if (mysqli_query($conexion, $updateQuery)) {
+        $response['status'] = 'success';
+        $response['title'] = 'Éxito';
+        $response['message'] = 'Actualización de datos exitosa';
+    } else {
+        $response['status'] = 'error';
+        $response['title'] = 'Error';
+        $response['message'] = 'Error al actualizar los datos: ' . mysqli_error($conexion);
+    }
+
+    mysqli_close($conexion);
+} else {
+    $response['status'] = 'error';
+    $response['title'] = 'Error';
+    $response['message'] = 'Acceso no válido';
+}
+
+echo json_encode($response);
+?> -->
+
+<?php
+include('../../../PHP/Conexion.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id_maquina = $_POST['edit_seri_maqu'];
+    $nombre_maquina = $_POST['edit_nomb_maqu'];
+    $marca = $_POST['edit_marc_maqu'];
+    $modelo = $_POST['edit_model_maqu'];
+    $placa = $_POST['edit_plac_maqu'];
+    $adquisicion = $_POST['edit_adqu_maqu'];
+    $cantidad = $_POST['edit_cant_maqu'];
+    $id_ambiente = $_POST['edit_id_maqu'];
+
+    // Construir la consulta SQL
+    $updateQuery = "UPDATE maquina SET nombre_maquina='$nombre_maquina', marca='$marca', modelo='$modelo', placa='$placa', adquisicion='$adquisicion', cantidad='$cantidad', id_ambiente='$id_ambiente' WHERE serial='$id_maquina'";
+
+    // Ejecutar la consulta de actualización
+    if (mysqli_query($conexion, $updateQuery)) {
+        $response['status'] = 'success';
+        $response['title'] = 'Éxito';
+        $response['message'] = 'Actualización de datos exitosa';
+    } else {
+        $response['status'] = 'error';
+        $response['title'] = 'Error';
+        $response['message'] = 'Error al actualizar los datos: ' . mysqli_error($conexion);
+    }
+
+    mysqli_close($conexion);
+} else {
+    $response['status'] = 'error';
+    $response['title'] = 'Error';
+    $response['message'] = 'Acceso no válido';
+}
+
+echo json_encode($response);
+?> -->

@@ -1,0 +1,25 @@
+Array
+(
+    [solicitud] => 2
+    [fecha_solicitud] => 2025-05-13
+    [necesidad] => edfsdf
+    [observaciones] => dsfsdfdsf
+    [nom_maquina] => ddfff
+    [marca] => fff
+    [modelo] => eee324
+    [placa] => 32434
+    [serial] => 22
+    [cantidad] => 22
+    [tipo] => Array
+        (
+            [0] => 1
+            [1] => 2
+        )
+
+    [suministro] => rfgdfg
+    [id_instructor] => 12
+    [solicitante] => NICOLAS RIOS
+    [id_ambiente] => 12
+    [id_rol_solicitante] => 4
+    [nombre_rol_solicitante] => PERSONAL
+)
