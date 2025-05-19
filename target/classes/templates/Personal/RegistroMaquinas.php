@@ -153,11 +153,11 @@ $resultado_maquina = mysqli_query($conexion, $consulta);
                         <label>Nombre Maquina:</label>
                         <input type="text" class="form-control mb-2" id="reg_nomb_maqu" name="reg_nomb_maqu" placeholder="Ingresar nombre" style="text-transform: uppercase;" required>
                         <label>Modelo Maquina:</label>
-                        <input type="text" class="form-control mb-2" id="reg_model_maqu" name="reg_model_maqu" placeholder="Ingresar modelo"  style="text-transform: uppercase;" requiredrequired>
+                        <input type="text" class="form-control mb-2" id="reg_model_maqu" name="reg_model_maqu" placeholder="Ingresar modelo"  style="text-transform: uppercase;" required>
                         <label>Marca Maquina:</label>
-                        <input type="text" class="form-control mb-2" id="reg_marc_maqu" name="reg_marc_maqu" placeholder="Ingresar marca"  style="text-transform: uppercase;" requiredrequired>
+                        <input type="text" class="form-control mb-2" id="reg_marc_maqu" name="reg_marc_maqu" placeholder="Ingresar marca"  style="text-transform: uppercase;" required>
                         <label>Placa Maquina:</label>
-                        <input type="text" class="form-control mb-2" id="reg_plac_maqu" name="reg_plac_maqu" placeholder="Ingresar placa"  style="text-transform: uppercase;" requiredrequired>
+                        <input type="text" class="form-control mb-2" id="reg_plac_maqu" name="reg_plac_maqu" placeholder="Ingresar placa"  style="text-transform: uppercase;" required>
                         <label>Adquisición de la máquina:</label>
                         <input type="date" class="form-control mb-2" id="reg_fech_maqu" name="reg_fech_maqu" required>
                         <label>Cantidad</label>
