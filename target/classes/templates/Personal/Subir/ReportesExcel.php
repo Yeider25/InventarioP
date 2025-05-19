@@ -48,13 +48,13 @@ $documento = $_POST['docu'];
 $ficha = $_POST['fi_anu'];
 $programa = $_POST['pro_anu'];
 //*** */ Depuración: Verificar los datos enviados desde el formulario eliminar mas adelante****
-var_dump($_POST);
-exit;
+/* var_dump($_POST);
+exit; */
 
 
 // Depuración: Verificar los datos enviados desde el formulario
-if (empty($fecha_solicitud) || empty($nombre_solicitante) || empty($documento) || empty($fi_anu) || empty($pro_anu)) {
-    die("Error: Los datos del formulario están vacíos.");
+if (empty($fecha_solicitud) || empty($nombre_solicitante) || empty($documento)) {
+    die("Error: Los datos principales del formulario están vacíos.");
 }
 
 
@@ -195,7 +195,7 @@ $conexion->close();
 
 // Configurar los encabezados HTTP para la descarga del archivo Excel
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-header('Content-Disposition: attachment; filename="solicitud_periodica.xlsx"');
+header('Content-Disposition: attachment; filename="Solicitud_Periodica.xlsx"');
 header('Cache-Control: max-age=0');
 
 // Guardar el archivo Excel en el flujo de salida (output)

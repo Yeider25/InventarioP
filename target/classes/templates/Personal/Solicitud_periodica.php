@@ -352,21 +352,23 @@ if (isset($_GET['cerrar_sesion'])) {
 </button> -->
 
         </form>
+
         <form action="Subir/ReportesExcel.php" method="post" id="excelForm">
     <div class="row">
         <div class="col-md-6 mb-3">
             <!-- Incluye los campos del formulario principal -->
-            <input type="hidden" name="f_solicitud" value="<?php echo isset($_POST['f_solicitud']) ? $_POST['f_solicitud'] : ''; ?>">
-<input type="hidden" name="nombre_solicitante" value="<?php echo isset($_POST['nombre_solicitante']) ? $_POST['nombre_solicitante'] : ''; ?>">
-<input type="hidden" name="docu" value="<?php echo isset($_POST['docu']) ? $_POST['docu'] : ''; ?>">
-            <input type="hidden" name="fi_anu" value="<?php echo isset($_POST['fi_anu']) ? $_POST['fi_anu'] : ''; ?>">
-            <input type="hidden" name="pro_anu" value="<?php echo isset($_POST['pro_anu']) ? $_POST['pro_anu'] : ''; ?>">
+            <input type="hidden" name="f_solicitud" value="<?php echo date('Y-m-d'); ?>">
+            <input type="hidden" name="nombre_solicitante" value="<?php echo isset($_SESSION['nombre_instructor']) ? $_SESSION['nombre_instructor'] : ''; ?>">
+            <input type="hidden" name="docu" value="<?php echo isset($documento_instructor) ? $documento_instructor : ''; ?>">
+            <input type="hidden" name="fi_anu" value="">
+            <input type="hidden" name="pro_anu" value="">
             <!-- Añade otros campos necesarios -->
             <input type="hidden" name="vista" value="solicitud_periodica">
         </div>
     </div>
     <button type="submit" class="btn btn-primary btn-lg mt-2 float-right">Descargar Excel <i class="bi bi-file-earmark-spreadsheet"></i></button>
 </form>
+        
     </div>
     </div>
     <script src="../js/Solicitud_periodica1.js"></script>
